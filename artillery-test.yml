@@ -1,0 +1,13 @@
+config:
+  target: "http://52.174.155.10:5001/it"
+  phases:
+    - duration: 60
+      arrivalRate: 20
+      name: Warm up
+    - duration: 120
+      arrivalRate: 5
+      rampTo: 10
+      name: Ramp up load
+    - duration: 600
+      arrivalRate: 100
+      name: Sustained load

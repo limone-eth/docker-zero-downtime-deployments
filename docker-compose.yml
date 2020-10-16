@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   nodejs:
-    image: lim996/docker-zero-downtime-deployment
+    image: localhost:5000/docker-zero-downtime-deployment
     ports:
       - "3000:3000"
     command: node index.js
